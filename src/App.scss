@@ -1,0 +1,10 @@
+@import url('https://fonts.cdnfonts.com/css/vegan-style-personal-use');
+*{
+    padding: 0;
+    margin: 0;
+}
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear
+{
+    display: none;
+}
