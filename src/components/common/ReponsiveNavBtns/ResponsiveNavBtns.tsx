@@ -5,8 +5,7 @@ import { useDevicesContext } from "../../../contexts/DevicesContext";
 import { useAppSelector } from "../../../redux/app/hooks";
 import { authSliceSelector } from "../../../redux/feature/auth/authSlice";
 import { useModalsContext } from "../../../contexts/ModalsContext";
-import { useLocation, useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 type Props = {
     close?: () => void;
 };
@@ -14,7 +13,6 @@ export default function ResponsiveNavBtns({ close }: Props) {
     const { isAuth, user: userProfile } = useAppSelector(authSliceSelector);
     const { isMobile, isTablet } = useDevicesContext();
     const { openRegisterModal,openLoginModal } = useModalsContext();
-    const { pathname } = useLocation();
     const navigate = useNavigate();
 
     function handleLoginBtnClick(){

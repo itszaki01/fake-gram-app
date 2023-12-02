@@ -2,7 +2,7 @@ import { Button } from "@mantine/core";
 import { IconLogin } from "@tabler/icons-react";
 
 type Props = {
-    handleLoginBtnClick: ()=> void
+    handleLoginBtnClick?: ()=> void
 }
 export default function LoginBtn({handleLoginBtnClick}:Props) {
 
